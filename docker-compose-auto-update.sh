@@ -4,10 +4,10 @@
 check_update() {
   service_name="$1"
 
-  if [ -f "/home/draugmar/docker/$service_name/docker-compose.yml" ]; then
-    compose_file="/home/draugmar/docker/$service_name/docker-compose.yml"
-  elif [ -f "/home/draugmar/docker/$service_name/docker-compose.yaml" ]; then
-    compose_file="/home/draugmar/docker/$service_name/docker-compose.yaml"
+  if [ -f "/home/user/docker/$service_name/docker-compose.yml" ]; then
+    compose_file="/home/user/docker/$service_name/docker-compose.yml"
+  elif [ -f "/home/user/docker/$service_name/docker-compose.yaml" ]; then
+    compose_file="/home/user/docker/$service_name/docker-compose.yaml"
   else
     echo "ERROR: No 'docker-compose.yml' found in $service_name"
     echo "-----------------------"
@@ -48,7 +48,7 @@ check_update() {
 }
 
 # Loop through each service directory and check for updates
-for service_dir in /home/draugmar/docker/*/; do
+for service_dir in /home/user/docker/*/; do
   service_name=$(basename "$service_dir")
   check_update "$service_name"
 done
