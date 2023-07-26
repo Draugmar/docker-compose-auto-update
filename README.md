@@ -4,6 +4,10 @@
 
 docker-compose-auto-update is a Bash script that automates the process of updating Docker containers based on Docker Compose for your microservices. The script iterates through all the directories of your Docker services and checks if there are any updates available for the Docker images. If an update is found, the script will stop the current container, update the image, and then restart the container with the latest version.
 
+## Disclaimer
+
+Please note that the docker-compose-auto-update script is provided as-is and may contain bugs or limitations. Use it at your own risk, and make sure to backup your data before running the script to update your Docker containers.
+
 ## Usage
 
 1.  Clone the repository or copy the content of the `docker-compose-auto-update.sh` script to your server where your Docker services are located.
@@ -26,10 +30,6 @@ The script will check each Docker service and inform you if an update is availab
 - Docker Compose installed on the system.
 - Write access to the directories of your Docker services.
 - Exectuion permissions for the script.
-
-## Disclaimer
-
-Please note that the docker-compose-auto-update script is provided as-is and may contain bugs or limitations. Use it at your own risk, and make sure to backup your data before running the script to update your Docker containers.
 
 ## Troubleshooting
 
