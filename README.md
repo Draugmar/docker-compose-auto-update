@@ -33,7 +33,7 @@ Please note that the docker-compose-auto-update script is provided as-is and may
 
 ## Troubleshooting
 
-- If you encounter any issues while using the docker-compose-auto-update script, please refer to the documentation for Docker and Docker Compose for troubleshooting. Additionally, you can seek assistance from the community or open an issue on the GitHub repository.
+If you encounter any issues while using the docker-compose-auto-update script, please refer to the documentation for Docker and Docker Compose for troubleshooting. Additionally, you can seek assistance from the community or open an issue on the GitHub repository.
 
 ## Contributing
 
